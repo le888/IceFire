@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Reflection;
+using UnityEngine;
 class CSVData
 {
     private static string[] tableTitle;
@@ -15,9 +16,16 @@ class CSVData
         {
             string tempStr;
 
-            sr.ReadLine();//第一行标示行没用
+            //sr.ReadLine();//第一行标示行没用
 
-            tempStr = sr.ReadLine();//第二行 title 与类名对应,区分大小写
+            tempStr = sr.ReadLine();//第一行 title 与类名对应,区分大小写
+
+            if(tempStr == "" || tempStr == null)
+            {
+                Debug.LogError("表头不能为空 " + filePath.Substring(filePath.LastIndexOf('\\')));
+                     
+            }
+
             tableTitle = tempStr.Split(',');
 
             while((tempStr = sr.ReadLine())!= null)
