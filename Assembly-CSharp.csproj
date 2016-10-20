@@ -45,6 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Data\CSVAttribute.cs" />
+     <Compile Include="Assets\Scripts\Data\CSVData.cs" />
      <Compile Include="Assets\Scripts\Windows\BaseWindow.cs" />
      <Compile Include="Assets\Scripts\Windows\WindowsManager.cs" />
  <Reference Include="UnityEngine.UI">
