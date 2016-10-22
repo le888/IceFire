@@ -47,6 +47,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Data\CSVAttribute.cs" />
      <Compile Include="Assets\Scripts\Data\CSVData.cs" />
+     <Compile Include="Assets\Scripts\Data\DataManager.cs" />
+     <Compile Include="Assets\Scripts\Data\ResourceManager.cs" />
+     <Compile Include="Assets\Scripts\Data\WindowsData.cs" />
      <Compile Include="Assets\Scripts\Windows\BaseWindow.cs" />
      <Compile Include="Assets\Scripts\Windows\WindowsManager.cs" />
  <Reference Include="UnityEngine.UI">
